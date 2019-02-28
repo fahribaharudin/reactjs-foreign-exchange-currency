@@ -62,7 +62,7 @@ class App extends Component {
                 <h5 className="mb-3">Foreign Exchange Currency App</h5>
                 <div className="row">
                   <div className="col-4">
-                    <select className="form-control" value={this.state.activeCurrency} onChange={this.changeActiveCurrency.bind(this)}>
+                    <select className="form-control" id="active-currency" value={this.state.activeCurrency} onChange={this.changeActiveCurrency.bind(this)}>
                       {
                         Object.keys(this.state.rates).map((base, i) => (
                           <option key={i}>{base}</option>
@@ -71,7 +71,7 @@ class App extends Component {
                     </select>
                   </div>
                   <div className="col-8">
-                    <input type="text" className="form-control" id="basic-url" aria-describedby="basic-addon3" value={this.state.activeCurrencyValue} onChange={evt => { this.setState({activeCurrencyValue: evt.target.value}) }}/>
+                    <input type="text" className="form-control" id="active-currency-input" value={this.state.activeCurrencyValue} onChange={evt => { this.setState({activeCurrencyValue: evt.target.value}) }}/>
                   </div>
                 </div>
               </div>
