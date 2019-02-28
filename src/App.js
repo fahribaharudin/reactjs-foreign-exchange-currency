@@ -37,6 +37,7 @@ class App extends Component {
       this.setState({
         selectedCurrencies: selectedCurrencies,
         addMoreCurrencySelectedValue: 0,
+        addMoreCurrency: false
       })
     }
   }
